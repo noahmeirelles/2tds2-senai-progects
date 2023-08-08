@@ -16,3 +16,39 @@ main{
     align-items: center;
     justify-content: center;
 }
+#postForm{
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+label,
+input,
+textarea{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 500px;
+    cursor:crosshair;
+}
+textarea{
+    resize: none;
+}
+button{
+    background-color: #d30000;
+    color: #fff;
+    cursor:crosshair;
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #a00000;
+    transition: 0.3s;
+}
+div{
+    cursor:crosshair;
+}
