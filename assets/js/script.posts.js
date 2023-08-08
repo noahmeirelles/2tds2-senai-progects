@@ -10,6 +10,7 @@ function savePost(){
     if(title && category && resume && publisher && date){
         storePost(title, category, resume, publisher, date);
     cleanFields();
+    showPosts();
     }else {
         alert("Preencha todos os campos!")
     }
@@ -32,4 +33,24 @@ function storePost(title, category, resume, publisher, date){
     posts.push(post)
 
     console.log(post)
+}
+
+function showPosts(){
+    let showContent = "";
+
+    posts.forEach((post, idex) => {
+        showContent += `
+        <div class="itemPost">
+        <h2>${post.title}</h2>
+        <p><strong>Categoria: </strong>${post.category}</p>
+        <p><strong>Resume: </strong>${post.resume}</p>
+        <p><strong>Publisher: </strong>${post.publisher}</p>
+        <p><strong>Data de publicação: </strong>${post.date}</p>
+
+        <button onclick"aditPost($(index))">Editar</button>
+        <button onclick"deletePost($(index))">Excluir</button>
+        </div>
+        `
+    })
+    document.getElementById("list").innerHTML = showContent;
 }
