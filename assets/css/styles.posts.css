@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f0f0f0;
+    background: url(../images/kalixwallpaper.png);
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 h1{
     color: #d30000;
@@ -22,7 +26,7 @@ main{
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #646161;
 }
 label,
 input,
@@ -38,7 +42,7 @@ textarea{
     resize: none;
 }
 button{
-    background-color: #d30000;
+    background-color: purple;
     color: #fff;
     cursor:crosshair;
     width: 100%;
@@ -46,9 +50,44 @@ button{
     border-radius: 8px;
 }
 button:hover{
-    background-color: #a00000;
+    background-color: darkmagenta;
     transition: 0.3s;
 }
 div{
     cursor:crosshair;
+}
+.itemPost {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.itemPost h2{
+    color:#a00000;
+    margin-bottom: 5px;
+}
+.itemPost button{
+    background-color: #d00000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: crosshair;
+    margin-bottom: 5px;
+}
+#list{
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.itemPost button:hover{
+    background-color: #a00000;
+    transition: 0.6s;
+}
+.hidden{
+    display: none;
 }
