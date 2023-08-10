@@ -1,3 +1,4 @@
+/*
 const posts = [];
 let postIndex = -1;
 function savePost() {
@@ -87,4 +88,120 @@ function removePost(index) {
     if (posts.lenght == 0) {
         document.getElementById("list").classList.add("hidden")
     }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+let personSimple = "John Doe";
+
+const personObject = new Object();
+personObject.firstName = "John";
+personObject.lastName = "Doe";
+personObject.age = 50;
+personObject.eyeColor = "blue";
+
+personObject.age = 10;
+
+console.log(personSimple)
+console.log(personObject)*/
+/*
+class User {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`Olá meu nome é ${this.name} e tenho ${this.age} anos`)
+    }
 }
+const user1 = new User('Joao', 30);
+user1.introduce()
+const user2 = new User('maria', 50);
+user2.introduce()*/
+/*class Pizza {
+    constructor(base, sauce, toppings, cheese){
+        this.base = base;
+        this.sauce = sauce;
+        this.toppings = toppings;
+        this.cheese = cheese;
+    }
+    getDescription(){
+        return `A delicious pizza with ${this.base} base, ${this.sauce} sauce, ${this.toppings} toppings, and ${this.cheese} cheese.`;
+    }
+    getTimerBase(){
+        if (this.base == 'traditional'){
+            return 15;
+        }else if(this.base == 'integral'){
+            return 17;
+        }else{
+            return 'This base does not exist'
+        }
+    }
+    getTimerSauce(){
+        if (this.sauce == 'tomato'){
+            return 6;
+        }else if(this.sauce == 'white'){
+            return 5;
+        }else{
+            return 'This sauce does not exist'
+        }
+    }
+    getTimerToppings(){
+        if (this.toppings == 'pepperoni'){
+            return 5;
+        }else if(this.toppings == 'kiwi'){
+            return 3;
+        }else{
+            return 'This toppings does not exist'
+        }
+    }
+    getTimerCheese(){
+        if (this.cheese == 'cow'){
+            return 5;
+        }else if(this.cheese == 'goat'){
+            return 7;
+        }else{
+            return 'This cheese does not exist'
+        }
+    }
+}
+
+const myPizza = new Pizza('integral', 'white', 'kiwi', 'goat');
+console.log(myPizza.getDescription())
+let Timepizza = myPizza.getTimerBase() + myPizza.getTimerSauce() + myPizza.getTimerToppings() + myPizza.getTimerCheese();
+console.log(`Time to cook the pizza = + ${Timepizza} minutes` );*/
+
+class Calculator {
+    add(a, b) {
+        return a + b;
+    }
+    multiply(a, b){
+        return a + b;
+    }
+    subtract(a, b){
+        return a +b;
+    }
+}
+const calculator = new Calculator();
+
+const sumResult = calculator.add(5, 3);
+console.log("Sum:", sumResult);
+
+const multiplicationResult = calculator.add(4, 2);
+console.log("Multiplication:", multiplicationResult);
+
+const subtractionResult = calculator.add(10, 4);
+console.log("Subtraction:", subtractionResult);
