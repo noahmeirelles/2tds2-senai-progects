@@ -1,4 +1,4 @@
-/*
+
 const posts = [];
 let postIndex = -1;
 function savePost() {
@@ -88,7 +88,7 @@ function removePost(index) {
     if (posts.lenght == 0) {
         document.getElementById("list").classList.add("hidden")
     }
-}*/
+}
 
 
 

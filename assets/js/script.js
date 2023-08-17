@@ -1,4 +1,4 @@
-/*
+
 let personSimple = "John Doe"
 
 const personObject = {
