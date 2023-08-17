@@ -27,3 +27,11 @@ class Product{
         this.categories.push(category);
     }
  }
+
+ const categoryList = new CategoryService()
+
+ function createCategory(){
+    const categoryName = "Doce";
+    categoryList.addCategory(categoryName)
+    console.log(categoryList.categories)
+ }
