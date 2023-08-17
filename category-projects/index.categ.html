@@ -21,10 +21,25 @@
             <div id="productInfos">
                 <div class="productInputs">
                     <label for="">Nome do Produto</label>
-                    <input type="text">
+                    <input type="text" id="productName" required>
+                </div>
+                <div class="productInputs">
+                    <label for="">Preço:</label>
+                    <input type="text" id="productPrice" required>
                 </div>
 
             </div>
+            
+                <label for="">Categoria:</label>
+                <select  id="productCategory" required>
+                    
+                </select>
+                <button class="btn">Criar Produto</button>
+        </div>
+        <!--list of categories and products-->
+        <div class="list-container">
+            <h2>📓 Categorias & Produtos</h2>
+            <ul id="categoriesList"></ul>
         </div>
     </div>
 </body>

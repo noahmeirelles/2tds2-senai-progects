@@ -35,12 +35,25 @@ h2{
     margin-bottom: 0.31rem;
 }
 
-.form-container input[type="text"]{
+.form-container input[type="text"], 
+.form-container input[type="Number"]{
     width: 100%;
     padding: 0.62rem;
     margin-bottom: 0.62rem;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+#productInfos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.62rem;
+}
+.productInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 .btn{
     background-color: #fd1b1b;
@@ -54,4 +67,34 @@ h2{
     background-color: #e60e0e;
     color: #fff;
     transform: scale(1.015);
+}
+
+.form-container input, select{
+    width: 100%;
+    padding: 0.62rem;
+    margin-bottom: 0.62rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.list-container {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-height: 20rem;
+    overflow-y: auto;
+}
+.list-container ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-container li{
+    margin-bottom: 0.62rem;
+    padding: 0.62rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
